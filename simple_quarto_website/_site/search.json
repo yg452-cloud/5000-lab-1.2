@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Image Processing Project",
+    "section": "",
+    "text": "Image processing usually convert images to grayscale, resize them, and create visualizations. The mathematical foundation uses matrix operations where each pixel has a value \\(p_{i,j}\\).\n\n\n\n\nWe can use simple image transformations: - Load images - Convert to grayscale\n\nThen we can create outputs: - Save processed images - Generate surface plots - Create gradient maps\n\n\n\n\nUsually the process includes:\n\nLoad: Read image files from data folder\nTransform: Apply grayscale and resize\nRotate: Rotate image by -90 degrees\nAnalyze: Compute gradients\nSave: Export all results\n\n\n\n\n\nThe basic image transformation formula is:\n\\[\nI'(x,y) = T(I(x,y))\n\\]\nwhere \\(I'\\) is the transformed image and \\(T\\) is our transformation function.\n\n\ngraph LR\n    A[Input] --&gt; B[Grayscale]\n    B --&gt; C[Resize]\n    C --&gt; D[Rotate]\n    D --&gt; E[Save]\n\n\n\n\n\nImage processing helps us understand visual data.\n\nResults should show good performance as the follow example:\n\n\n\nStep\nTime (ms)\nQuality\n\n\n\n\nGrayscale\n15\nGood\n\n\nResize\n9\nGood\n\n\nRotate\n22\nGood\n\n\n\nHere are sample images which can be processed:\n\n\n\nSample input image\n\n\n\n\n\nSample output image\n\n\n\n\n\nWatch this tutorial:\n\n\n\n\n\nThere is a paper relevant with Image Processing(Vaswani et al. 2017) and(Chua 1997)\nFuture work1 could include more advanced algorithms."
+  },
+  {
+    "objectID": "index.html#methods",
+    "href": "index.html#methods",
+    "title": "Image Processing Project",
+    "section": "",
+    "text": "We can use simple image transformations: - Load images - Convert to grayscale\n\nThen we can create outputs: - Save processed images - Generate surface plots - Create gradient maps\n\n\n\n\nUsually the process includes:\n\nLoad: Read image files from data folder\nTransform: Apply grayscale and resize\nRotate: Rotate image by -90 degrees\nAnalyze: Compute gradients\nSave: Export all results"
+  },
+  {
+    "objectID": "index.html#math",
+    "href": "index.html#math",
+    "title": "Image Processing Project",
+    "section": "",
+    "text": "The basic image transformation formula is:\n\\[\nI'(x,y) = T(I(x,y))\n\\]\nwhere \\(I'\\) is the transformed image and \\(T\\) is our transformation function.\n\n\ngraph LR\n    A[Input] --&gt; B[Grayscale]\n    B --&gt; C[Resize]\n    C --&gt; D[Rotate]\n    D --&gt; E[Save]"
+  },
+  {
+    "objectID": "index.html#results",
+    "href": "index.html#results",
+    "title": "Image Processing Project",
+    "section": "",
+    "text": "Image processing helps us understand visual data.\n\nResults should show good performance as the follow example:\n\n\n\nStep\nTime (ms)\nQuality\n\n\n\n\nGrayscale\n15\nGood\n\n\nResize\n9\nGood\n\n\nRotate\n22\nGood\n\n\n\nHere are sample images which can be processed:\n\n\n\nSample input image\n\n\n\n\n\nSample output image"
+  },
+  {
+    "objectID": "index.html#learn-more",
+    "href": "index.html#learn-more",
+    "title": "Image Processing Project",
+    "section": "",
+    "text": "Watch this tutorial:"
+  },
+  {
+    "objectID": "index.html#bib-citation",
+    "href": "index.html#bib-citation",
+    "title": "Image Processing Project",
+    "section": "",
+    "text": "There is a paper relevant with Image Processing(Vaswani et al. 2017) and(Chua 1997)\nFuture work1 could include more advanced algorithms."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Image Processing Project",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nmachine learning approaches↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#image-processing",
+    "href": "slides/slides.html#image-processing",
+    "title": "Image Processing Project",
+    "section": "Image Processing",
+    "text": "Image Processing"
+  },
+  {
+    "objectID": "slides/slides.html#processing-pipeline",
+    "href": "slides/slides.html#processing-pipeline",
+    "title": "Image Processing Project",
+    "section": "Processing Pipeline",
+    "text": "Processing Pipeline\nImage processing workflow includes several key steps:\n\nInput: Load images from data directory\nTransform: Apply grayscale conversion and geometric transformations\n\nAnalyze: Generate gradient maps and surface plots\nOutput: Save processed images and generate reports\n\nTechnical Approach\nThe methodology draws from recent advances in computer vision (Vaswani et al. 2017) and classical image processing techniques (Chua 1997)."
+  },
+  {
+    "objectID": "slides/slides.html#image-processing-models",
+    "href": "slides/slides.html#image-processing-models",
+    "title": "Image Processing Project",
+    "section": "Image Processing models",
+    "text": "Image Processing models\n\nTransformer: \nCNN: \n\n\n\n\n\n\n\n\n\n\nNumber of patches: 16\nPatch size: 16x16\nAttention matrix shape: torch.Size([16, 16])\n\n\n\n\n\n\nChua, Leon O. 1997. “CNN: A Vision of Complexity.” International Journal of Bifurcation and Chaos 7 (10): 2219–2425.\n\n\nVaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” Advances in Neural Information Processing Systems 30."
+  }
+]

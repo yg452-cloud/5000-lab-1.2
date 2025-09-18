@@ -1,0 +1,91 @@
+---
+title: "Image Processing Project"
+format: 
+  html:
+    toc: true
+bibliography: reference.bib
+---
+
+# Introduction
+
+Image processing usually convert images to grayscale, resize them, and create visualizations. The mathematical foundation uses matrix operations where each pixel has a value $p_{i,j}$.
+
+## Methods
+
+:::: {.columns}
+
+::: {.column width="50%"}
+We can use simple image transformations:
+- Load images
+- Convert to grayscale
+:::
+
+::: {.column width="50%"}
+Then we can create outputs:
+- Save processed images
+- Generate surface plots
+- Create gradient maps
+:::
+
+::::
+
+### Key Steps
+
+Usually the process includes:
+
+- **Load**: Read image files from data folder
+- **Transform**: Apply grayscale and resize
+- **Rotate**: Rotate image by -90 degrees
+- **Analyze**: Compute gradients
+- **Save**: Export all results
+
+## Math
+
+The basic image transformation formula is:
+
+$$
+I'(x,y) = T(I(x,y))
+$$
+
+where $I'$ is the transformed image and $T$ is our transformation function.
+
+### Workflow
+
+```mermaid
+graph LR
+    A[Input] --> B[Grayscale]
+    B --> C[Resize]
+    C --> D[Rotate]
+    D --> E[Save]
+```
+
+## Results
+
+> Image processing helps us understand visual data.
+
+Results should show good performance as the follow example:
+
+| Step | Time (ms) | Quality |
+|------|-----------|---------|
+| Grayscale | 15 | Good |
+| Resize | 9 | Good |
+| Rotate | 22 | Good |
+
+Here are sample images which can be processed:
+
+![Sample input image](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop)
+
+![Sample output image](https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=300&h=200&fit=crop)
+
+## Learn More
+
+Watch this tutorial:
+
+<iframe width="400" height="225" src="https://www.youtube.com/embed/C_zFhWdM4ic" title="Image Processing" frameborder="0" allowfullscreen></iframe>
+
+## Bib Citation
+There is a paper relevant with Image Processing[@vaswani2017attention] and[@chua1997cnn]
+
+Future work[^1] could include more advanced algorithms.
+
+[^1]: machine learning approaches
